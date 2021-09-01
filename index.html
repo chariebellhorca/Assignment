@@ -1,13 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Gallery</title>
+	<title>First Program</title>
+	<link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=devise-width", initial-scale=1.0>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href=/assets/favicon.icon>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+	<style>
+        .social-menue{
+            display: flex;
+            list-style-type: none;
+        }
+
+        .social-menu i {
+            color: #ffffff;
+            width: 100px;
+            height: 35px;
+            border-radius: 100px;
+            font-size: 25px;
+            margin-right: 70px;
+            transition: all 0.2s ease-in-out;
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-menu i:before {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            font-weight: 400;
+        }
+
+        .social-menu a {
+            text-decoration: none;
+        }
+
+        .fa-twitter {
+            background: #00aced
+        }
+
+        .fa-facebook {
+            background:#3b5998
+        }
+
+        .social-menu i:hover {
+            opacity: .7;
+            border-radius: 0;
+        }
+
+		body {
+			margin: 0;
+			margin-top: 50px;
+			font-family: sans-serif;
+		}
+
+		header {
+			display: flex;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 50px;
+			line-height: 50px;
+			background-color: #eee;
+		}
+
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+            width: 800%;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color:#566D7E;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #ffcccc;
+            color: white;
+        }
+
+		header * {
+			display: inline;
+			height: 50px;
+		}
+
+		header ul {
+			padding: 0;
+		}
+
+		header li{
+			margin-left: 30px;
+		}
+
+		section {
+			height: 180vh;
+			border: 3px solid black;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+
+		footer {
+			text-align: center;
+			padding: 50px;
+		}
+
+		#hero h1 {
+			font-size: 5em;
+		}
+
+		section h2 {
+			font-size: 3.5em;
+		}
+
+		section h3{
+			font-size: 1.5em;
+		}
+
+		header a {
+			text-decoration: none;
+			color: black;
+		}
+
+
+        #hero {
+            background: linear-gradient(rgba(105,255,255,0.75),rgba(105.255.255.075))
+        }
+
+        #about {
+            background: linear-gradient(rgba(105,255,255,0.75),rgba(105.255.255.075))
+        }
+
+        #contact {
+            background: linear-gradient(rgba(105,255,260,0.75),rgba(105.255.255.075))
+        }
+
+
+		
+
+	</style>
 </head>
 <body>
-    <h1>Hi, this is Chariebell Horca</h1>
-    <a href="Gallery.html">Clic here to see my Gallery</a>
+
+
+
+<?php
+
+    echo "HORCA. CHARIEBELL CESAR,";
+
+?>
+
+        <header>
+            <div class="topnav">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+        <main>
+                <li><a href="#contact">Contact</a></li>
+            </div>
+                
+        </header>
+
+            <section id="hero">
+                <div class="section-inner">
+                <tr><th>
+                 <img src="horca.jpg" alt="background" width="350px" height="350px">
+                </th></tr>  
+                    <h1><b>"MY PORTFOLIO"</b></h1>
+                </div>
+            </section>
+            <section id="about">
+                <div class="section-inner">
+                    <h2>About me</h2>
+                    <p><h3>Hello I am Chariebell, I live in Pinamopoan Capoocan, Leyte, I am the youngest child of the three siblings.<br> I have two pets, and my favorite color is Blue, and my hobby is dancing, and Iam middle student.<br> Taking Bachelor of Science Information Technology (BSIT) at Eastern Visyas State University Carigara Campus, Carigara Leyte.
+                    </h3></p>
+                    <h2>Education</h2>
+                    <ul>
+                        <li><h3>2012-2013</h3></li>
+                        <ul><h4>
+                        	Pinamopoan Cenral School
+                        </h4></ul>
+
+                        <li><h3>2015-2016</h3></li>
+                        <ul><h4>
+                        	Pinamopoan National Highschool
+                        </h4></ul>
+
+                        <li><h3>2018-2019</h3></li>
+                        <ul><h4>
+                        	Asuncion S. Melgar National Highschool
+                        </h4></ul>
+                    </ul>
+
+                     <h2>Goals in Life</h2>
+                    <ul>
+                        <li><h3>Finish my studies</h3></li>
+                        <li><h3>Make my parents proud</h3></li>
+                        <li><h3>To have a stable job</h3></li>
+                        <li><h3>To build my own house and business</h3></li>
+                        <li><h3>To travel</h3></li>
+                        <li><h3>And lastly, to get married for someone I love</h3></li> </ul>
+
+                    <h2>Mission</h2>
+                    <p><h3>Life is to live each moment to the fullest by having a positive attitudes, a smile a genuine enjoyment for life,<br> while giving everything I have to the love the people and environment around me and make it a better place.
+                    </h3></p>
+
+                    <h2>Vision</h2>
+                    <p><h3>My life works for all the people needing my help, to support them in times when obstacles come in their life.<br> Committed to serve, accept, love, and support. Finishing my studies is one of my opportunity to commit my vision.
+                    </h3></p>
+
+                    </div>
+            </section>
+            <section id="contact">
+                <div class="section-inner">
+                    <h2>Contact me!</h2>
+                    <p><h3>You can find me on:</h3></p>
+                    <ul class="social-menu">
+                        <li><a href="https://twitter.com/"><i class="fab fa-twitter">Twitter</i></a></li>
+                        <li><a href="https://facebook.com/"><i class="fab fa-facebook">Facebook
+                        </i></a></li>
+                    </ul>
+                    <p><h3>Or, you can call or text <a href="cellphone number">09498486437</a>.</h3></p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            © Copyright HORCA CESAR 2001 
+        </footer>
+
 </body>
 </html>
+
+
